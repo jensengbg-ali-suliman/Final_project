@@ -136,7 +136,7 @@ body {
     */
 
     header {
-        background: url(/assets/images/Mobile/background_ix.jpg) no-repeat;
+        background: url(../images/Mobile/background_ix.jpg) no-repeat;
         background-size: 100% auto;
         background-position: 0 auto;
         display: flex;
@@ -437,19 +437,19 @@ body {
 
     .kids {
         padding-bottom: 28vh;
-        background: url(/assets/images/Mobile/kids.jpg);
+        background: url(../images/Mobile/kids.jpg);
         background-size: cover;
     }
 
     .men {
         padding-bottom: 28vh;
-        background: url(/assets/images/Mobile/men.jpg);
+        background: url(../images/Mobile/men.jpg);
         background-size: cover;
     }
 
     .women {
         padding-bottom: 28vh;
-        background: url(/assets/images/Mobile/women.jpg);
+        background: url(../images/Mobile/women.jpg);
         background-size: cover; 
     }
 
@@ -477,7 +477,7 @@ body {
 @media all and (min-width: 400px) {
 
     header {
-        background: url(/assets/images/Mobile/background.jpg) no-repeat;
+        background: url(../images/Mobile/background.jpg) no-repeat;
     }
 
 
@@ -549,7 +549,7 @@ body {
 
 
     header {
-        background: url(/assets/images/Desktop/home.jpg) no-repeat;
+        background: url(../images/Desktop/home.jpg) no-repeat;
         background-size: cover;
         background-attachment: fixed;
         display: grid;
@@ -694,7 +694,7 @@ body {
     .team_section {
         display: flex;
         flex-direction: column;
-        background: url(/assets/images/Desktop/team.jpg) no-repeat;
+        background: url(../images/Desktop/team.jpg) no-repeat;
         background-attachment: fixed;
         background-size: cover;
         justify-content: center;
@@ -839,7 +839,7 @@ body {
     */
 
     .footer_container {
-        background: url(/assets/images/Desktop/footer.jpg) no-repeat;
+        background: url(../images/Desktop/footer.jpg) no-repeat;
         background-attachment: fixed;
         height: 130vh;
         background-size: cover;
@@ -994,7 +994,7 @@ body {
 
     .kids {
         height: 100vh;
-        background: url(/assets/images/Desktop/KIDS.jpg);
+        background: url(../images/Desktop/KIDS.jpg);
         background-size: cover;
         background-attachment: fixed;
         display: grid;
@@ -1012,7 +1012,7 @@ body {
 
     .men {
         height: 100vh;
-        background: url(/assets/images/Desktop/MEN.jpg);
+        background: url(../images/Desktop/MEN.jpg);
         background-size: cover;
         background-attachment: fixed;
         display: grid;
@@ -1031,7 +1031,7 @@ body {
 
     .women {
         height: 100vh;
-        background: url(/assets/images/Desktop/WOMEN.jpg);
+        background: url(../images/Desktop/WOMEN.jpg);
         background-size: cover;
         background-attachment: fixed;
         display: grid;
