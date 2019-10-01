@@ -1047,6 +1047,11 @@ body {
          ;
          padding-top: 4rem;
     }
+    
+    .pricing_cta {
+        font-weight: bold;
+        text-transform: capitalize;
+    }
 
     /* === ANIMATIONS AND HOVER EFFECTS === */
 
