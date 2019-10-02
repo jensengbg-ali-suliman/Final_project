@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Raleway';
-    color: #fff;
     scroll-behavior: smooth;
 }
 
@@ -13,9 +12,7 @@ body {
 
 
 
-.only_mobile {
-    display: none;
-}
+
 
 .container {
     min-height: 100vh;
@@ -27,18 +24,11 @@ body {
 =============================
 */
 
-@media only screen and (max-width: 414px) {
 
-    * {
-        color: initial;
-    }
+
     
     body{
         background: #FBF5F3;
-    }
-
-    .only_mobile {
-        display: block;
     }
 
     .only_desktop {
@@ -464,8 +454,6 @@ body {
         100% {transform: translateY(0rem)}
     }
 
-}
-
 
 
 /*
@@ -525,6 +513,18 @@ body {
 
 
 @media all and (min-width: 760px) {
+
+    .wrapper > * {
+        color: #fff;
+    }
+
+    .only_desktop {
+        display: flex;
+    }
+
+    .only_mobile {
+        display: none;
+    }
 
     h1 {
         color: #fff;
@@ -594,6 +594,7 @@ body {
 
     .link {
         padding: .8rem 2rem;
+        color: #fff;
     }
     
     .nav_link_btn {
@@ -626,6 +627,7 @@ body {
         font: .8rem 'raleway';
         text-transform: uppercase;
         letter-spacing: .3rem;
+        color: #fff;
     }
     
     /**/
@@ -637,6 +639,9 @@ body {
         padding: 6rem 3rem 1rem 0rem;
         width: 30%;
         font-weight: 900;
+        text-align: left;
+        margin: 0rem 0rem;
+        line-height: 3rem;   
     }
     
     .different_color {
@@ -657,6 +662,7 @@ body {
         grid-area: pricing;
         display: flex; 
         justify-content: flex-end;
+        margin: 0rem 3rem 3rem 0rem;
     }
     
     .price_card {
@@ -698,6 +704,7 @@ body {
         background-size: cover;
         justify-content: center;
         align-items: center;
+        padding: 0rem 0rem;
     }
 
     .team_header {
@@ -716,8 +723,13 @@ body {
         text-transform: capitalize;
     }
 
+    .figure_description {
+        padding: 2rem 0rem;
+    }
+
     .card_section {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 80%;
@@ -749,6 +761,7 @@ body {
     */
 
     .about_section {
+        padding: initial;
         height: 60vh;
         background: #FBF5F3;
         display: grid;
@@ -762,6 +775,7 @@ body {
         "img img . btn . ."
         ". . . . . ."
          ;
+         text-align: left;
     }
 
     .about_img {
@@ -772,6 +786,8 @@ body {
 
     .about_header {
         grid-area: header;
+        margin-bottom: 0rem;
+        margin-top: auto;
         color: #002149;
     }
 
@@ -781,6 +797,8 @@ body {
         padding-right: 0rem;
         font-size: 1.2rem;
         color: #333;
+        margin: 0rem;
+        
     }
 
     .about_cta {
@@ -799,37 +817,44 @@ body {
         background: #FBF5F3;
         padding: 6rem 0rem;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         color: #000;
+        padding: initial;   
+        text-align: left;
     }
 
     .contact_info_section {
+        height: auto;
         width: 40%;
         padding: 0rem 4rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-start;
 
     }
 
     .contact_header {
         color: #002149;
+        margin: initial;
     }
 
     .contact_us_text {
         color: #999;
+        margin-bottom: 2rem;
     }
 
     .contact_description {
         color: #333;
-        padding: 0rem 6rem 0rem 2rem;
+        padding: 0rem 3rem 0rem 2rem;
     }
 
     .contact_info {
         width: 100%;
         display: flex;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
         color: #000;
     }
 
@@ -839,8 +864,9 @@ body {
 
     .footer_container {
         background: url(../images/Desktop/footer.jpg) no-repeat;
+        background-size: cover;
         background-attachment: fixed;
-        height: 130vh;
+        height: auto;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -849,12 +875,12 @@ body {
     }
 
     .footer_header {
-        margin: 3rem 0rem;
+        margin: 1rem 0rem;
     }
 
     .footer_form {
-        width: 26vw;
-        height: 64vh;
+        width: 30vw;
+        min-height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -872,18 +898,12 @@ body {
         width: 100%;
         border: none; 
         padding: 1.2rem .8rem;
-        border-bottom: .2rem solid #A17F5C; 
-        margin-bottom: 1rem;
+        border-bottom: .2rem solid #A17F5C;
+        margin: 0rem 0rem 1rem 0rem;
         outline: none;
         transition: all .4s ease;
     }
 
-    .footer {
-        margin-top: auto;
-        width: 100%;
-        height: 35vh;
-        background: #0009
-    }
 
     .form_btn {
         padding: 1rem 2rem;
@@ -891,6 +911,7 @@ body {
         text-transform: uppercase;
         margin-top: 1rem;
         align-self: center;
+        letter-spacing: .1rem;
     }
 
     .footer {
@@ -901,6 +922,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: auto;
         padding: 2rem 3rem;
     }
 
@@ -934,11 +956,13 @@ body {
     .footer_link_img {
         margin: 0rem .4rem;
         transition: all .4s ease;
+        transform: scale(1);
     }
 
     .copyright {
         color: #fff;
         font-size: .6rem;
+        margin: 0rem;
     }
 
     /* === PRICING SECTION STYLING === */
@@ -975,6 +999,8 @@ body {
         grid-area: price-p;
         font-size: 1.4rem;
         line-height: 2.8rem;
+        padding: 0rem;
+        text-align: left;
     }
 
     .price_footer {
@@ -982,6 +1008,7 @@ body {
         justify-content: space-between;
         align-items: center;
         grid-area: price-f;
+        width: auto;
     }
 
     .price_tag {
@@ -1002,10 +1029,10 @@ body {
         grid-template-areas:
         "header header header header header header "
         "quote quote quote . price-h price-h"
-        ". . . . . ."
         ". . . . price-p price-p"
         ". . . . price-p price-p"
         ". . . . price-f price-f"
+        ". . . . . ."
          ;
     }
 
@@ -1019,7 +1046,7 @@ body {
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
         "price-h price-h . . . ."
-        ". . . . . ."
+        "price-p price-p . . . ."
         "price-p price-p . . . ."
         "price-p price-p . . . ."
         "price-f price-f . . . ."
@@ -1038,7 +1065,7 @@ body {
         grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
         ". . . . price-h price-h"
-        ". . . . . ."
+        ". . . . price-p price-p"
         ". . . . price-p price-p"
         ". . . . price-p price-p"
         ". . . . price-f price-f"
