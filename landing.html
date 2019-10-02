@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <section class="wrapper">
+    <div class="wrapper">
 
         <header class="container">
             <!-- Desktop only elements -->
@@ -240,13 +240,13 @@
 
         <footer class="container footer_container">
             <h1 class="white footer_header">Send us a message </h1>
-            <form class="footer_form" action="">
+            <form class="footer_form" action="POST">
                 <label for="name">Type your name</label>
                 <input class="form_input" type="text" name="name" autocomplete="off">
                 <label for="email">Type your E-mail</label>
                 <input class="form_input" type="email" name="email" autocomplete="off">
-                <label for="email">Type your message</label>
-                <textarea class="form_input" name="" id="" cols="30" rows="10"></textarea>
+                <label for="message">Type your message</label>
+                <textarea class="form_input" name="message" id="mssg" cols="30" rows="10"></textarea>
                 <button type="submit" class="cta form_btn">send</button>
             </form>
 
@@ -273,7 +273,7 @@
 
         </footer>
 
-    </section>
+    </div>
 
     <script src="assets/functions/script.js"></script>
 
